@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "467544581877",
+    "project_id": "bedupaakohomes",
+    "storage_bucket": "bedupaakohomes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467544581877:android:3e297a89e91d1e16f947bc",
+        "android_client_info": {
+          "package_name": "com.bedupaakohomes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CFErrdQPUw0rDSFiH8Hgej_frk_VHUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
