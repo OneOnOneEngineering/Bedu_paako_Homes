@@ -1,4 +1,7 @@
 package com.bedupaakohomes.domain.repository
 
-class HomeStaysRepository {
+import com.bedupaakohomes.data.model.HomeStay
+
+interface HomeStaysRepository {
+suspend fun getHomeStays() : List<HomeStay>?
 }

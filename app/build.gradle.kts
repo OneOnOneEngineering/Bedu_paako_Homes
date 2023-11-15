@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -51,6 +53,11 @@ android {
 }
 
 dependencies {
+    val lifecycle_version = "2.6.0-alpha01"
+    val room_version = "2.4.3"
+    val dagger_version = "2.42"
+    val glide_version = "4.13.2"
+    val retrofit_version = "2.9.0"
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -60,7 +67,36 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+
+    //firebase database
     implementation("com.google.firebase:firebase-database:20.3.0")
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+
+    //Room
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+
+     //Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+
+    //dagger
+    implementation("com.google.dagger:dagger:$dagger_version")
+    annotationProcessor("com.google.dagger:dagger-compiler:$dagger_version")
+
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:$retrofit_version")
+    implementation ("com.squareup.retrofit2:converter-gson:$retrofit_version")
+    implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6")
+
+    //Glide
+    implementation ("com.github.bumptech.glide:glide:$glide_version")
+    annotationProcessor ("com.github.bumptech.glide:compiler:$glide_version")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

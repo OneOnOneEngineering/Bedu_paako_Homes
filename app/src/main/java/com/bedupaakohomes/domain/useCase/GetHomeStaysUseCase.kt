@@ -1,4 +1,8 @@
 package com.bedupaakohomes.domain.useCase
 
-class GetHomeStaysUseCase {
+import com.bedupaakohomes.data.model.HomeStay
+import com.bedupaakohomes.domain.repository.HomeStaysRepository
+
+class GetHomeStaysUseCase (private val homeStaysRepository : HomeStaysRepository) {
+    suspend fun execute() : List<HomeStay>? = homeStaysRepository.getHomeStays()
 }
