@@ -1,4 +1,4 @@
 package com.bedupaakohomes.data.repository.homeStays.dataSourceImpl
 
-class HomeStaysLocalDataSourceImpl {
+class HomeStaysLocalDataSourceImpl  {
 }
